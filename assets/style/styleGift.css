@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Charmonman&family=Dancing+Script&family=Felipa&family=Parisienne&family=Petit+Formal+Script&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Charmonman&family=Dancing+Script&family=Felipa&family=Parisienne&family=Petit+Formal+Script&family=Satisfy&family=Shadows+Into+Light+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {     
+    background: #f7f7f7;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #e4e4e4;
+    border-radius: 5px;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/assets/img/bg.png);
+    background-repeat: repeat;
+    background-size: 350px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+li {
+    list-style: none;
+    margin: 30px;
+    z-index: 100;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0 12px;
+    color: black;
+    transition: all 0.8s;
+    font-family: 'Shadows Into Light Two', 'Open Sans', sans-serif;
+}
+
+.links a:hover {
+    background-color: yellow;
+    color: white;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.namaLogo img {
+    height: 80px;
+    position: relative;
+    left: 40px;
+    bottom: -30px;
+    rotate: -15deg;
+    transform: scale(1);
+    transform: ;
+    animation: logo 6s linear infinite;
+}
+@keyframes logo
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+.mainRaw {
+    width: auto;
+    height: 520px;
+    background-color: #f6f6fc;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.pembukaan {
+    margin-right: 60px;
+}
+
+.pembukaan p {
+    font-size: 1.2rem;
+    font-family: 'Shadows Into Light Two', 'Open Sans', sans-serif;
+}
+
+.pembukaan .end {
+    text-align: end;
+    margin: 0 20px;
+}
+
+.end a {
+    font-size: 1.2rem;
+    font-family: 'Shadows Into Light Two', 'Open Sans', sans-serif;
+    color: blue;
+}
+
+.gambar img {
+    height: 440px;
+    margin: 0 100px;
+    position: relative;
+    bottom: -40px;
+}
+
+.foreground img {
+    height: 300px;
+    position: relative;
+    right: 20px;
+    bottom: -100px;
+    transform: scale(1);
+    animation: foreground 5s linear infinite;
+}
+@keyframes foreground
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+.linkImg {
+    display: flex;
+    margin: 0 40px;
+}
+
+.logoImg1 {
+    height: 120px;
+    margin: -25px;
+    position: relative;
+    top: -50px;
+    transition: all 0.7s;
+}
+
+.logoImg1:hover {
+    height: 160px;
+}
+
+.logoImg2 {
+    height: 120px;
+    margin: -20px;
+    position: relative;
+    top: -75px;
+    transition: all 0.7s;
+}
+
+.logoImg2:hover {
+    height: 180px;
+}
+
+.logoImg3 {
+    height: 150px;
+    margin: -30px;
+    position: relative;
+    top: -75px;
+    transition: all 0.7s;
+}
+
+
+@media(max-width: 600px) {
+    .links {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 30px;
+    }
+    
+    li {
+        list-style: none;
+        margin: 0px;
+        z-index: 100;
+        font-size: 0.75rem;
+    }
+    
+    .links a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        padding: 0 12px;
+        color: black;
+        transition: all 0.8s;
+        font-family: 'Shadows Into Light Two', 'Open Sans', sans-serif;
+    }
+    
+    .namaLogo img {
+        height: 80px;
+        left: 20px;
+    }
+    
+    .mainRaw {
+        width: auto;
+        height: auto;
+        padding: 30px;
+        margin: 0 10px;
+        flex-direction: column-reverse;
+    }
+    
+    .pembukaan {
+        margin: 100px 10px;
+    }
+    
+    .judul {
+        font-size: 1.5rem;
+        transition: all 1s;
+        font-family: 'Felipa', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .pembukaan p {
+        font-family: 'Shadows Into Light Two', 'Open Sans', sans-serif;
+        transition: all 1s;
+        font-size: 1.1rem;
+        animation:  3s;
+    }
+    
+    .gambar img {
+        height: 340px;
+        margin: 6px;
+        position: relative;
+    }
+
+    .foreground img {
+        display: none;
+    }
+
+    .linkImg {
+        display: flex;
+        margin: 0 40px;
+    }
+    
+    .logoImg1 {
+        height: 80px;
+        margin: -15px;
+        position: relative;
+        top: -10px;
+        transition: all 0.7s;
+    }
+
+    .logoImg1:hover {
+        height: 100px;
+    }
+    
+    .logoImg2 {
+        height: 80px;
+        margin: 0px;
+        position: relative;
+        top: -45px;
+        transition: all 0.7s;
+    }
+    
+    .logoImg2:hover {
+        height: 100px;
+    }
+    
+    .logoImg3 {
+        height: 100px;
+        margin: -10px;
+        position: relative;
+        top: -35px;
+        transition: all 0.7s;
+    }
+}
